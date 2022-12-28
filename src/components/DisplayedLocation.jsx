@@ -94,7 +94,7 @@ export const DisplayedLocation = () => {
             />
           )}
           <span
-            className={` text-3xl  mt-4 ${
+            className={` md:text-3xl text-xl mt-4 ${
               theme === "light" ? "" : "text-white"
             }`}>
             {locationName}
@@ -104,7 +104,7 @@ export const DisplayedLocation = () => {
               locationData[0]?.Day.Icon ?? 1
             )}-s.png`}
             alt="Weather-Image"
-            className="md:h-40  h-32"
+            className="md:h-40 h-32"
           />
           {isLoading ? (
             <div className=" text-4xl">Loading</div>

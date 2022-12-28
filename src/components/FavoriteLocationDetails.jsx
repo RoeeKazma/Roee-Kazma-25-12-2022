@@ -27,13 +27,13 @@ const FavoriteLocationDetails = ({
       className="flex text-center justify-center mb-20"
       onClick={onClickHandler}>
       <div
-        className={`grid text-center justify-center ${
+        className={`flex flex-col text-center justify-around items-center relative ${
           theme === "light"
             ? "bg-gradient-to-r from-blue-500 to-blue-400 shadow-xl"
             : "bg-gradient-to-b from-gray-600 to-gray-800 shadow-xl"
         } rounded-md w-60 h-60 md:w-96 md:h-80 `}>
         <span
-          className={` text-4xl font-mono mt-4 ${
+          className={` md:text-3xl text-xl mt-4 ${
             theme === "light" ? "" : "text-white"
           }`}>
           {locationName}
@@ -43,10 +43,10 @@ const FavoriteLocationDetails = ({
             Icon
           )}-s.png`}
           alt="Weather-Image"
-          className="md:w-40 md:h-40 w-32 h-32"
+          className=" md:h-40 h-32"
         />
         <span
-          className={`text-4xl font-mono ${
+          className={`text-3xl font-mono ${
             theme === "light" ? "" : "text-white"
           }`}>
           {tempConvertor(Minimum.Value, degree)}

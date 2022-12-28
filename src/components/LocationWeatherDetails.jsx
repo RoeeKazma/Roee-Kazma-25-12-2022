@@ -17,7 +17,7 @@ export const LocationWeatherDetails = ({ location }) => {
             : "bg-gradient-to-b from-gray-600 to-gray-800 shadow-xl"
         } rounded-md w-52 h-54 md:w-64 md:h-64 `}>
         <span
-          className={` text-2xl pt-4 pb-2 ${
+          className={` text-3xl pt-4 pb-2 ${
             theme === "light" ? "" : " text-white"
           }`}>
           {dateConverter(location.Date)}
@@ -27,10 +27,10 @@ export const LocationWeatherDetails = ({ location }) => {
             location?.Day.Icon ?? 1
           )}-s.png`}
           alt="Weather-Image"
-          className=" md:w-36 md:h-28 h-28 w-32 mx-auto"
+          className="  md:h-28 h-28 mx-auto"
         />
         <span
-          className={`text-2xl pb-3 ${theme === "light" ? "" : " text-white"}`}>
+          className={`text-3xl pb-3 ${theme === "light" ? "" : " text-white"}`}>
           {tempConvertor(location?.Temperature.Minimum.Value, degree)}°-
           {tempConvertor(location?.Temperature.Maximum.Value, degree)}°
         </span>
