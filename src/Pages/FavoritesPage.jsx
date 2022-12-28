@@ -10,7 +10,7 @@ const FavoritesPage = () => {
   const theme = useSelector((state) => state.darkModeSlice.mode);
   return (
     <div
-      className=" bg-cover min-h-screen"
+      className=" bg-cover"
       style={{
         backgroundImage:
           theme === "light"

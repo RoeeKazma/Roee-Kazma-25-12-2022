@@ -34,7 +34,7 @@ export const Searchbar = () => {
   }, [debounceValue]);
 
   return (
-    <div className=" grid justify-center pt-12 mb-12 ">
+    <div className=" grid justify-center py-14">
       <div className=" flex border border-purple-200 rounded relative">
         <input
           type="text"

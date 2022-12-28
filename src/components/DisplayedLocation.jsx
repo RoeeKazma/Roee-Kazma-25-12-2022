@@ -71,7 +71,7 @@ export const DisplayedLocation = () => {
 
   return (
     <>
-      <div className="flex text-center justify-center mb-20">
+      <div className="flex text-center justify-center mb-14">
         <div
           className={`grid text-center justify-center ${
             theme === "light"

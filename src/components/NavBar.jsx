@@ -25,11 +25,11 @@ export const NavBar = () => {
           theme === "light"
             ? "bg-gradient-to-r from-blue-500 to-blue-400 shadow-2xl"
             : "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-300 shadow-2xl"
-        } p-10`}>
+        } p-5`}>
         <div className="flex gap-10">
           <Link
             to={"/"}
-            className={`text-md md:text-2xl ${
+            className={`text-md md:text-2xl  ${
               theme === "light" ? "" : " text-gray-100"
             }`}>
             Weather App
@@ -50,8 +50,8 @@ export const NavBar = () => {
           </Link>
         </div>
 
-        <ul className=" flex items-center md:gap-10 gap-5 mr-5 ml-10 mb-2">
-          <li className="">
+        <ul className=" flex items-center gap-4 mr-5 ml-10 mb-2">
+          <li className=" cursor-pointer border-solid rounded-md bg-blue-200 p-2">
             {theme === "light" ? (
               <BsSun
                 onClick={themeToggleHandler}
@@ -64,11 +64,11 @@ export const NavBar = () => {
               />
             )}
           </li>
-          <li>
+          <li className=" cursor-pointer border-solid rounded-md bg-blue-200 p-1 pl-2">
             {degree === "F" ? (
               <span
                 onClick={degreeToggleHandler}
-                className={`text-sm md:text-3xl font-bold ${
+                className={`text-sm md:text-2xl font-bold ${
                   theme === "light" ? "" : " text-white"
                 }`}>
                 C°

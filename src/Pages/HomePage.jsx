@@ -8,7 +8,7 @@ export const HomePage = () => {
   return (
     <>
       <div
-        className=" bg-cover min-h-screen pb-20"
+        className=" bg-cover pb-9"
         style={{
           backgroundImage:
             theme === "light"
