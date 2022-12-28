@@ -80,14 +80,14 @@ export const DisplayedLocation = () => {
           } rounded-md w-60 h-60 md:w-96 md:h-80 `}>
           {isFavorite.length > 0 ? (
             <BsStarFill
-              className={` text-2xl absolute m-4 ${
+              className={` text-2xl absolute m-4 cursor-pointer ${
                 theme === "light" ? "" : " text-white"
               }`}
               onClick={favoriteToggleHandler}
             />
           ) : (
             <BsStar
-              className={` text-2xl absolute m-4 ${
+              className={` text-2xl absolute m-4 cursor-pointer ${
                 theme === "light" ? "" : " text-white"
               }`}
               onClick={favoriteToggleHandler}
@@ -104,7 +104,7 @@ export const DisplayedLocation = () => {
               locationData[0]?.Day.Icon ?? 1
             )}-s.png`}
             alt="Weather-Image"
-            className="md:w-40 md:h-40 w-32 h-32"
+            className="md:w-56 md:h-40 w-32 h-32"
           />
           {isLoading ? (
             <div className=" text-4xl">Loading</div>

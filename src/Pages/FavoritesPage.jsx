@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useSelector } from "react-redux";
 import FavoriteLocationDetails from "../components/FavoriteLocationDetails";
 
@@ -10,7 +11,7 @@ const FavoritesPage = () => {
   const theme = useSelector((state) => state.darkModeSlice.mode);
   return (
     <div
-      className=" bg-cover"
+      className="bg-cover flex-grow"
       style={{
         backgroundImage:
           theme === "light"

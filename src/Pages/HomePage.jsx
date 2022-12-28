@@ -8,7 +8,7 @@ export const HomePage = () => {
   return (
     <>
       <div
-        className=" bg-cover pb-9"
+        className=" bg-cover pb-9 flex-grow"
         style={{
           backgroundImage:
             theme === "light"
