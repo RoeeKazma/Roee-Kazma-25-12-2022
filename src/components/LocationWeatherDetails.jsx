@@ -27,7 +27,7 @@ export const LocationWeatherDetails = ({ location }) => {
             location?.Day.Icon ?? 1
           )}-s.png`}
           alt="Weather-Image"
-          className=" md:w-36 md:h-28 w-28 h-16  mx-auto"
+          className=" md:w-36 md:h-28 h-28 w-32 mx-auto"
         />
         <span
           className={`text-2xl pb-3 ${theme === "light" ? "" : " text-white"}`}>
