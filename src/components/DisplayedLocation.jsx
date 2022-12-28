@@ -73,28 +73,28 @@ export const DisplayedLocation = () => {
     <>
       <div className="flex text-center justify-center mb-14">
         <div
-          className={`grid text-center justify-center ${
+          className={`flex flex-col text-center justify-around items-center relative ${
             theme === "light"
               ? "bg-gradient-to-r from-blue-500 to-blue-400 shadow-xl"
               : "bg-gradient-to-b from-gray-600 to-gray-800 shadow-xl"
           } rounded-md w-60 h-60 md:w-96 md:h-80 `}>
           {isFavorite.length > 0 ? (
             <BsStarFill
-              className={` text-2xl absolute m-4 cursor-pointer ${
+              className={` text-2xl absolute left-0 top-0 m-4 cursor-pointer ${
                 theme === "light" ? "" : " text-white"
               }`}
               onClick={favoriteToggleHandler}
             />
           ) : (
             <BsStar
-              className={` text-2xl absolute m-4 cursor-pointer ${
+              className={` text-2xl absolute left-0 top-0 m-4 cursor-pointer ${
                 theme === "light" ? "" : " text-white"
               }`}
               onClick={favoriteToggleHandler}
             />
           )}
           <span
-            className={` text-4xl  mt-4 font- ${
+            className={` text-3xl  mt-4 ${
               theme === "light" ? "" : "text-white"
             }`}>
             {locationName}
@@ -104,7 +104,7 @@ export const DisplayedLocation = () => {
               locationData[0]?.Day.Icon ?? 1
             )}-s.png`}
             alt="Weather-Image"
-            className="md:w-56 md:h-40 w-32 h-32"
+            className="md:h-40  h-32"
           />
           {isLoading ? (
             <div className=" text-4xl">Loading</div>

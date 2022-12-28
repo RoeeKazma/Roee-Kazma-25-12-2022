@@ -11,7 +11,7 @@ export const LocationWeatherDetails = ({ location }) => {
   return (
     <div className="flex ">
       <div
-        className={` grid text-center justify-center  ${
+        className={` flex flex-col text-center justify-around items-center relative  ${
           theme === "light"
             ? "bg-gradient-to-r from-blue-500 to-blue-400 shadow-xl"
             : "bg-gradient-to-b from-gray-600 to-gray-800 shadow-xl"
